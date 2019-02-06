@@ -16,6 +16,13 @@
             <xpath expr="//p[@t-field='doc.note']" position="replace">
                 <p>Thank you and have a wonderfulday!</p>
             </xpath>
+
+            <!-- Only Print if a proforma invoice -->
+            <xpath expr="//div[hasclass('page')]//div[hasclass('row', 'mt32', 'mb32')]" position="before">
+                <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                    <h3>Important Message!!</h3>
+                </t>
+            </xpath>
         </template>
     </data>
 </odoo>

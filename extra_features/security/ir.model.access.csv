@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_extra_features_extra_features,extra_features.extra_features,model_extra_features_extra_features,,1,0,0,0

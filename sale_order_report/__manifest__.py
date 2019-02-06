@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Extra Training Demo",
+    'name': "Training: Sales Order Report",
 
     'summary': """
         Extra sale report modification.""",
@@ -23,9 +23,6 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
         'report/inherited_sale_report_templates.xml',
     ],
     # only loaded in demonstration mode
